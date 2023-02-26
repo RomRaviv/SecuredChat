@@ -1,4 +1,4 @@
-package com.example.securedchat;
+package com.example.securedchat.Models;
 
 import com.example.securedchat.Models.Message;
 

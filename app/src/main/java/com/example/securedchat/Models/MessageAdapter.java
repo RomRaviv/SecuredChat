@@ -1,4 +1,4 @@
-package com.example.securedchat;
+package com.example.securedchat.Models;
 
 
 import android.app.Activity;
@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.securedchat.Models.Message;
+import com.example.securedchat.R;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textview.MaterialTextView;
 

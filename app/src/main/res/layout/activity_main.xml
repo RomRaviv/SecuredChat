@@ -29,8 +29,8 @@
             android:layout_weight="1"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@color/black"
-            android:hint="Type your message here"
+            android:textColor="@color/white"
+            android:hint="Type your message..."
             android:id="@+id/inputText">
 
         </EditText>
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:text="send"
             android:textStyle="bold"
-            android:backgroundTint="#87ABC8">
+            android:backgroundTint="#FF9800">
 
         </Button>
     </LinearLayout>

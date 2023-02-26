@@ -18,6 +18,8 @@ import android.widget.Toast;
 
 import com.example.securedchat.Models.DecryptEncrypt;
 import com.example.securedchat.Models.Message;
+import com.example.securedchat.Models.MessageAdapter;
+import com.example.securedchat.Models.orderComparator;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
@@ -118,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
                 getSystemService(LAYOUT_INFLATER_SERVICE);
         View popupView = inflater.inflate(R.layout.popup, null);
 
-        popup = new PopupWindow(popupView, 800, 800, true);
+        popup = new PopupWindow(popupView, 800, 600, true);
         popup.showAtLocation(view, Gravity.CENTER, 0, 0);
 
 
