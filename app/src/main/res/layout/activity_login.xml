@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FF9800">
+    <ImageView
+        android:id="@+id/img_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img"
+        android:layout_margin="25dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_below="@+id/img_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/main_LOT_password"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidth="3dp"
+            android:textColorHint="@color/black"
+            app:hintTextColor="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/main_EDT_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your name"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="#FFC107"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/main_LOT_key"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeWidth="3dp"
+            android:textColorHint="@color/black"
+            app:hintTextColor="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/main_EDT_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Encrypt key"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="#FFC107"
+                android:inputType="textPassword"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/main_BTN_sign_in"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Login"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:backgroundTint="#F6F3EF"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_lock"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="60dp"/>
+</RelativeLayout>
