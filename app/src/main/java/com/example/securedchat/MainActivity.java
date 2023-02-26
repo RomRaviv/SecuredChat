@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
                 getSystemService(LAYOUT_INFLATER_SERVICE);
         View popupView = inflater.inflate(R.layout.popup, null);
 
-        popup = new PopupWindow(popupView, 800, 400, true);
+        popup = new PopupWindow(popupView, 800, 800, true);
         popup.showAtLocation(view, Gravity.CENTER, 0, 0);
 
 
