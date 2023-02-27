@@ -12,8 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:alpha="1"
-        android:background="#FF9800"
-        app:cardCornerRadius="18dp">
+        android:background="#FF9800">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
@@ -28,12 +27,12 @@
                 android:orientation="vertical">
 
                 <com.google.android.material.textview.MaterialTextView
-                    android:id="@+id/sender_name"
+                    android:id="@+id/txt_send_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
                     android:padding="10dp"
-                    android:text="name"
+                    android:text="date"
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     android:textSize="18dp" />
@@ -62,7 +61,7 @@
                         android:layout_gravity="end"
                         android:layout_marginRight="5dp"
                         android:layout_marginBottom="10dp"
-                        android:text="decrypt"
+                        android:text="Show note"
                         android:textStyle="bold"
                         android:textSize="15sp"
                         android:textColor="@color/black"

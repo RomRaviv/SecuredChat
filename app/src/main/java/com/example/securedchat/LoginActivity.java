@@ -36,8 +36,9 @@ public class LoginActivity extends AppCompatActivity {
                     bundle.putString("key", key);
                     intent = new Intent(LoginActivity.this, MainActivity.class);
                     intent.putExtras(bundle);
+                    edt_key.setText("");
+                    edt_name.setText("");
                     startActivity(intent);
-                    finish();
                 }
             }
         });

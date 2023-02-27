@@ -8,12 +8,13 @@ import android.view.ViewGroup;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.securedchat.Models.Message;
 import com.example.securedchat.R;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textview.MaterialTextView;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     {
@@ -48,7 +49,7 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             final MessageHolder holder = (MessageHolder) viewHolder;
             Message message = getItem(position);
 
-            holder.sender_name.setText(message.getSenderName()+ " :");
+            holder.txt_send_date.setText(message.getDate() + " :");
             holder.message.setText(message.getDescription());
         }
 
@@ -62,13 +63,13 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
 
         class MessageHolder extends RecyclerView.ViewHolder {
-            private MaterialTextView sender_name;
+            private MaterialTextView txt_send_date;
             private MaterialTextView message;
             private MaterialButton decrypt;
 
             public MessageHolder(View itemView) {
                 super(itemView);
-                sender_name = itemView.findViewById(R.id.sender_name);
+                txt_send_date = itemView.findViewById(R.id.txt_send_date);
                 message = itemView.findViewById(R.id.message);
                 decrypt = itemView.findViewById(R.id.decrypt);
 
